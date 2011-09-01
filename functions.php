@@ -20,6 +20,12 @@
 
 if ( ! isset( $content_width ) ) $content_width = 640;
 
+// Add support for post formats.
+	add_theme_support(
+		'post-formats',
+		array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat')
+	);
+
 // Custom excerpt functions. 
 
 function droidpress_new_excerpt_more($more) {
