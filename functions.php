@@ -12,7 +12,7 @@
 // Define global variables.
 
 	$themename = 'droidpress';
-	$themenamefull = 'DroidPress lite';
+	$themenamefull = 'DroidPress';
 	$themeslug = 'dp';
 	$options = get_option($themename);
 
@@ -168,7 +168,7 @@ function droidpress_admin_link() {
 
 	global $wp_admin_bar;
 
-	$wp_admin_bar->add_menu( array( 'id' => 'DroidPress lite', 'title' => 'DroidPress lite Settings', 'href' => admin_url('themes.php?page=theme_options')  ) ); 
+	$wp_admin_bar->add_menu( array( 'id' => 'DroidPress', 'title' => 'DroidPress Settings', 'href' => admin_url('themes.php?page=theme_options')  ) ); 
   
 }
 add_action( 'admin_bar_menu', 'droidpress_admin_link', 113 );

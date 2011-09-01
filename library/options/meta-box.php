@@ -543,7 +543,7 @@ $meta_boxes = array();
 
 $meta_boxes[] = array(
 	'id' => 'slides',
-	'title' => 'DroidPress lite Page Options',
+	'title' => 'DroidPress Page Options',
 	'pages' => array('page'),
 
 	'fields' => array(
