@@ -107,11 +107,11 @@ function theme_options_do_page() {
 <div class="wrap">
 
 <br />
-<img src="<?php echo get_template_directory_uri() ;?>/images/options/ifeaturepro.png" />
+<div class="titletext">DroidPress</div>
 <br />
+<div class="upgrade"><a href="http://cyberchimps.com/droidpresspro/" target="_blank">Upgrade to DroidPress Pro</a> Pro includes a featured posts section, a feature slider, post format support, and more.</div>
 <br />
-
-		<?php if ( false !== $_REQUEST['updated'] ) { ?>
+<?php if ( false !== $_REQUEST['updated'] ) { ?>
 		<?php echo '<div id="message" class="updated fade" style="float:left;"><p><strong>'.$name.' settings saved</strong></p></div>'; ?>
     
     <?php } if( isset( $_REQUEST['reset'] )) { echo '<div id="message" class="updated fade"><p><strong>'.$name.' settings reset</strong></p></div>'; } ?>  
@@ -126,12 +126,12 @@ function theme_options_do_page() {
 	
 	<div class="menu">
 	<ul>
-		<li><a href="http://cyberchimps.com/support" target="_blank">Support</a></li>
-		<li><a href="http://cyberchimps.com/ifeaturepro/docs/">Documentation</a></li>
+		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
+		<li><a href="http://cyberchimps.com/support/" target="_blank">Support</a></li>
+		<li><a href="http://cyberchimps.com/ifeaturepro/docs/">Docs</a></li>
 		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
 		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
-		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
 	</ul>
 	</div>
 
