@@ -9,7 +9,7 @@
 */
 
 $select_featured_images = array(
-'0' => array('value' => 'left','label' => __('Left (default)' )),'1' => array('value' => 'center','label' => __('Center')), '2' => array('value' => 'right','label' => __('Right')),
+'0' => array('value' => 'left','label' =>'Left (default)' ),'1' => array('value' => 'center','label' => 'Center'), '2' => array('value' => 'right','label' => 'Right'),
 
 );
 

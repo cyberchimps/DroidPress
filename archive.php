@@ -2,7 +2,7 @@
 
 /*
 	Archive
-	Creates the iFeature archive pages.
+	Creates the archive pages.
 	Copyright (C) 2011 CyberChimps
 	Version 2.0
 */

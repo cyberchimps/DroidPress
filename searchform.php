@@ -3,7 +3,7 @@
 /*
 	Search Form
 	
-	Creates the iFeature search form 
+	Creates the search form 
 	
 	Copyright (C) 2011 CyberChimps
 */

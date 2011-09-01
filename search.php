@@ -3,7 +3,7 @@
 /*
 	Search
 	
-	Establishes the iFeature search functionality. 
+	Establishes the search functionality. 
 	
 	Copyright (C) 2011 CyberChimps
 */

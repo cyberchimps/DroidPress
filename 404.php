@@ -2,7 +2,7 @@
 
 /*
 	404
-	Creates the iFeature 404 page.
+	Creates the 404 page.
 	Copyright (C) 2011 CyberChimps
 */
 

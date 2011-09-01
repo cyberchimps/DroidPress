@@ -51,7 +51,7 @@
 <meta name="distribution" content="global" />
 <meta name="language" content="en" />
 
-<!-- iFeature Blog Page SEO options -->
+<!-- Blog Page SEO options -->
 	<?php if ($blogtitle != '' AND is_front_page()): ?>
 		<meta name="title" content="<?php echo $blogtitle ?>" />
 	<?php endif; ?> 
@@ -63,10 +63,10 @@
 	<?php if ($homekeywords != '' AND is_front_page()): ?>
 		<meta name="keywords" content="<?php echo $homekeywords ?>" />
 	<?php endif; ?>
-<!-- /iFeature Blog Page SEO options -->
+<!-- Blog Page SEO options -->
 
 
-<!-- iFeature Page SEO options -->
+<!-- Page SEO options -->
 	<?php if ($title != '' AND !is_front_page()): ?>
 		<meta name="title" content="<?php echo $title ?>" />
 	<?php endif; ?> 
@@ -78,7 +78,7 @@
 	<?php if ($keywords != '' AND !is_front_page()): ?>
 		<meta name="keywords" content="<?php echo $keywords ?>" />
 	<?php endif; ?>
-<!-- /iFeature Page SEO options -->
+<!-- Page SEO options -->
 	
 <!-- Page title -->
 	<title>

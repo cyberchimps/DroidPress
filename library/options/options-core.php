@@ -128,7 +128,7 @@ function theme_options_do_page() {
 	<ul>
 		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
 		<li><a href="http://cyberchimps.com/support/" target="_blank">Support</a></li>
-		<li><a href="http://cyberchimps.com/ifeaturepro/docs/">Docs</a></li>
+		<li><a href="http://cyberchimps.com/droidpress/docs/">Docs</a></li>
 		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
 		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
@@ -147,8 +147,8 @@ function theme_options_do_page() {
     
     <div class="tabContainer">
 		
-			<?php settings_fields( 'if_options' ); ?>
-			<?php $options = get_option( 'ifeature' ); ?>
+			<?php settings_fields( 'dp_options' ); ?>
+			<?php $options = get_option( 'droidpress' ); ?>
 
 			<table class="form-table">   
 

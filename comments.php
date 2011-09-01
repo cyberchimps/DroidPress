@@ -2,7 +2,7 @@
 
 /*
 	Comments
-	Creates the iFeature comments section.
+	Creates the comments section.
 	Copyright (C) 2011 CyberChimps
 	Version 2.0
 */

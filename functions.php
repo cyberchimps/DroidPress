@@ -16,6 +16,10 @@
 	$themeslug = 'dp';
 	$options = get_option($themename);
 
+// Define Content Width.
+
+if ( ! isset( $content_width ) ) $content_width = 640;
+
 // Custom excerpt functions. 
 
 function droidpress_new_excerpt_more($more) {
@@ -95,7 +99,7 @@ function droidpress_render_ie_pie() { ?>
 	<style type="text/css" media="screen">
 		#header li a, .postmetadata, .post_container, #navbackground, .wp-caption, .sidebar-widget-style, .sidebar-widget-title, .boxes, .box1, .box2, .box3, .box-widget-title,
   			{
-  				behavior: url('<?php bloginfo('stylesheet_directory'); ?>/library/pie/PIE.htc');
+  				behavior: url('<?php get_stylesheet_directory_uri('stylesheet_directory'); ?>/library/pie/PIE.htc');
 			}
 	</style>
 <?php
@@ -146,7 +150,7 @@ add_action( 'wp_head', 'droidpress_superfish',0);
 	
 function droidpress_register_menus() {
 	register_nav_menus(
-		array( 'header-menu' => __( 'Header Menu' ), 'footer-menu' => __( 'Footer Menu' ))
+		array( 'header-menu' => 'Header Menu', 'footer-menu' => 'Footer Menu' )
   	);
 }
 
@@ -196,7 +200,7 @@ add_action( 'admin_bar_menu', 'droidpress_admin_link', 113 );
 	));
     
 
-	//iFeature theme options file
+	//Theme options files
 	
 require_once ( get_template_directory() . '/library/options/options-core.php' );
 require_once ( get_template_directory() . '/library/options/meta-box.php' );

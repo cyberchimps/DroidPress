@@ -3,7 +3,7 @@
 /*
 	Single
 	
-	Establishes the single post template of iFeature. 
+	Establishes the single post template. 
 	
 	Copyright (C) 2011 CyberChimps
 */

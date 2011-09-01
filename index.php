@@ -3,7 +3,7 @@
  /*
 	Index
 	
-	Creates the iFeature default index page.
+	Creates the default index page.
 	
 	Copyright (C) 2011 CyberChimps
 */

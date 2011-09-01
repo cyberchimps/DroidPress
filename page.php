@@ -2,7 +2,7 @@
 
 /*
 	Page
-	Establishes the core iFeature page tempate.
+	Establishes the core page tempate.
 	Version: 2.0
 	Copyright (C) 2011 CyberChimps
 

@@ -3,7 +3,7 @@
 /*
 	
 	Footer
-	Establishes the widgetized footer and static post-footer section of iFeature. 
+	Establishes the widgetized footer and static post-footer section. 
 	Copyright (C) 2011 CyberChimps
 	Version 2.0
 	
@@ -102,16 +102,10 @@
 	   			'theme_location' => 'footer-menu', // Setting up the location for the main-menu, Main Navigation.
 	    	)); ?>
 			</div>
-			
-			<!--Inserts iFeature SEO Module-->
-			
-				<?php if ($hidelink != "1" ):?>
-				
 					<div id="credit">
 						<?php get_template_part('credit', 'footer' ); ?>
 					</div>
 			
-				<?php endif;?>
 		</div>  <!--end afterfooterwrap-->	
 		
 	</div> <!--end afterfooter-->	
