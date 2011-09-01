@@ -52,7 +52,7 @@ function enqueue_scripts() {
     wp_enqueue_style($themeslug.'css');  
 }
 
-$name = "DroidPress lite";
+$name = "DroidPress";
 $template_url = get_template_directory_uri();
 
 
