@@ -1,0 +1,6 @@
+DroidPress lite Changelog
+
+****************************
+
+Version 1.0 (09-01-2011)
+-Initial release.
