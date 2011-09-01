@@ -2,5 +2,8 @@ DroidPress Changelog
 
 ****************************
 
+Version 1.0.1 (09-01-2011)
+-Added post formats support (not sure how that was deleted).
+
 Version 1.0 (09-01-2011)
 -Initial release.
