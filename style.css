@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/droidpress/
 Description: A free premium WordPress theme designed by CyberChimps.com inspired by the popular Android mobile phone operating system by Google. DroidPress features post formats support, page level SEO options, social icons, widgetized sidebar and footer, and typography support including Google Fonts.
 Author: CyberChimps
 Author URI: http://cyberchimps.com/
-Version: 1.0.1
+Version: 1.0.2
 Tags: green, blue, dark, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,18 +41,33 @@ body { font-size: 14px;background-color: #303030;	}
 /* Fonts  */
 
 h1 { 
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 22px;
+	line-height: 1.5em;
 }
 
 h2 { 
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5em;
 }
 
 h3 { 
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 18px;	
+	line-height: 1.5em;
+}
+
+h4 { 
+	font-size: 16px;	
+	line-height: 1.5em;
+}
+
+h5 { 
+	font-size: 14px;	
+	line-height: 1.5em;
+}
+
+h6 { 
+	font-size: 12px;	
+	line-height: 1.5em;
 }
 
 .archive-title {
@@ -62,7 +77,7 @@ h3 {
 
 .archive_posts_title a {
 	font-size: 32px;
-	
+	font-weight: 400;
 	margin-bottom: 10px;
 	color: #000;
 }
@@ -71,9 +86,9 @@ h3 {
 
 p { margin: 0 0 10px 0; }
 
-a { color: #717171; text-decoration: none; }
+a { color: #3B5A7B; text-decoration: none; }
 
-a:hover { color: #555; }
+a:hover { color: #97C03D; }
 
 a img {border: none; }
 
@@ -81,6 +96,10 @@ ul, ol {
 	margin: 0 0 10px 0; 
 	padding-left: 2px;	
 }
+
+dt {font-weight: bold;}
+
+dd {margin-bottom: 1.625em; }
 
 /* Header  */
 
@@ -283,6 +302,7 @@ ol {
 .posts_title {
 	font-size: 38px;
 	margin-bottom: 8px;
+	font-weight: 400;
 }
 
 .posts_title a{
@@ -351,6 +371,7 @@ ol {
 
 img.size-full {
 	max-width: 600px;
+	height: auto;
 }
 
 

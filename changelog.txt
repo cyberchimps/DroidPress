@@ -2,6 +2,15 @@ DroidPress Changelog
 
 ****************************
 
+Version 1.0.2 (9-27-2011)
+-wp_link_pages(); added to content templates. 
+-Adjusted H tag stylings, added line height.
+-Height:auto added to full size image class. 
+-Adjusted Definition Title and Text styling.
+-Reduced content_width to account for margins.
+-Removed extra trailing slash from JS filepath in functions.php
+-Register_sidebar now within a function that hooks into widgets_init().
+
 Version 1.0.1 (09-01-2011)
 -Added post formats support (not sure how that was deleted).
 

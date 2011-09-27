@@ -18,7 +18,7 @@
 
 // Define Content Width.
 
-if ( ! isset( $content_width ) ) $content_width = 640;
+if ( ! isset( $content_width ) ) $content_width = 600;
 
 // Add support for post formats.
 	add_theme_support(
@@ -121,7 +121,7 @@ function droidpress_plusone(){
 
 	$script = "
 		
-		<script type=\"text/javascript\" src=\"".$path."/plusone.js\"></script>
+		<script type=\"text/javascript\" src=\"".$path."plusone.js\"></script>
 		";
 	
 	echo $script;
@@ -184,27 +184,30 @@ function droidpress_admin_link() {
 add_action( 'admin_bar_menu', 'droidpress_admin_link', 113 );
 
 
-// Register Sidebars
+// DroidPress Widgits Init
 
-    	register_sidebar(array(
-    		'name' => 'Sidebar Widgets',
-    		'id'   => 'sidebar-widgets',
-    		'description'   => 'These are widgets for the sidebar.',
-    		'before_widget' => '<div id="%1$s" class="sidebar-widget-style">',
-    		'after_widget'  => '</div>',
-    		'before_title'  => '<h2 class="sidebar-widget-title">',
-    		'after_title'   => '</h2>'
-    	));
+function droidpress_widgets_init() {
+    register_sidebar(array(
+    	'name' => 'Sidebar Widgets',
+    	'id'   => 'sidebar-widgets',
+    	'description'   => 'These are widgets for the sidebar.',
+    	'before_widget' => '<div id="%1$s" class="sidebar-widget-style">',
+    	'after_widget'  => '</div>',
+    	'before_title'  => '<h2 class="sidebar-widget-title">',
+    	'after_title'   => '</h2>'
+    ));
     	
-	
 	register_sidebar(array(
-	'name' => 'Footer',
-	'before_widget' => '<div class="footer-widgets">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3 class="footer-widget-title">',
-	'after_title' => '</h3>',
+		'name' => 'Footer',
+		'id' => 'footer-widgets',
+		'description'   => 'These are widgets for the footer',
+		'before_widget' => '<div class="footer-widgets">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
 	));
-    
+}
+add_action( 'widgets_init', 'droidpress_widgets_init' );    
 
 	//Theme options files
 	
