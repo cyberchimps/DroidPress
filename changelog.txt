@@ -1,6 +1,10 @@
 DroidPress Changelog
 
 ****************************
+Version 1.0.3 (10-20-2011)
+-Fixed image paths related to post format icons.
+-Changed default font family to Arial, Helvetica, serif.
+-Fixed theme options copy. 
 
 Version 1.0.2 (9-27-2011)
 -wp_link_pages(); added to content templates. 

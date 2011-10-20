@@ -71,7 +71,7 @@ array( "name" => "Help",
     "std" => ""),
     
 array( "name" => "Choose a Font:",  
-    "desc" => "(Default is Cantarell)",  
+    "desc" => "(Default is Arial)",  
     "id" => $shortname."_font",  
     "type" => "select2",  
     "std" => ""),
