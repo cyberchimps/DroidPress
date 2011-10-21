@@ -94,10 +94,6 @@ add_filter('excerpt_length', 'droidpress_new_excerpt_length');
 // This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 	
-// Load jQuery
-	if ( !is_admin() ) {
-	   wp_enqueue_script('jquery');
-	}
 
 // PIE  
 function droidpress_render_ie_pie() { ?>
@@ -128,29 +124,26 @@ function droidpress_plusone(){
 }
 add_action('wp_head', 'droidpress_plusone');
 
-
-// Register superfish scripts
-	
-function droidpress_superfish() {
- 
-    if (!is_admin()) { // Add the scripts, but not to the wp-admin section.
-    // Adjust the below path to where scripts dir is, if you must.
-    $scriptdir = get_template_directory_uri() ."/library/sf/";
- 
-    // Register the Superfish javascript file
-    wp_register_script( 'superfish', $scriptdir.'sf.js', false, '1.4.8');
-    wp_register_script( 'sf-menu', $scriptdir.'sf-menu.js');
-    // Now the superfish CSS
+// Call Superfish/jQuery
+if ( !is_admin() ) 
+{
+	function droidpress_frontend_scripts()
+ 	{  
    
-    //load the scripts and style.
-	wp_enqueue_style('superfish-css');
-    wp_enqueue_script('superfish');
-    wp_enqueue_script('sf-menu');
-    } // end the !is_admin function
-} //end add_our_scripts function
+    	// Adjust the below path to where scripts dir is, if you must.
+    	$scriptdir = get_template_directory_uri() ."/library/sf/";
  
-//Add our function to the wp_head. You can also use wp_print_scripts.
-add_action( 'wp_head', 'droidpress_superfish',0);
+    	// Register the Superfish javascript file
+    	wp_register_script( 'superfish', $scriptdir.'sf.js', false, '1.4.8');
+    	wp_register_script( 'sf-menu', $scriptdir.'sf-menu.js');
+   
+   		 //load the scripts.
+    	wp_enqueue_script('superfish');
+    	wp_enqueue_script('sf-menu');
+    	wp_enqueue_script('jquery');
+  	}
+add_action('wp_enqueue_scripts', 'droidpress_frontend_scripts');
+}
 	
 // Register menu names
 	

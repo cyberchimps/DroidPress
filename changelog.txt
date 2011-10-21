@@ -1,6 +1,11 @@
 DroidPress Changelog
 
 ****************************
+Version 1.0.4 (10-21-2011)
+-Fixed margin on archive post title. 
+-Combined jQuery and Superfish register scripts into unified function hooked into wp_enqueue_scripts.
+-Fixed syntax issue with clearing div on single.php. 
+
 Version 1.0.3 (10-20-2011)
 -Fixed image paths related to post format icons.
 -Changed default font family to Arial, Helvetica, serif.
