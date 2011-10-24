@@ -172,7 +172,7 @@ function theme_options_do_page() {
 <p class="submit">
 <input name="reset" type="submit" value="Reset" />
 <input type="hidden" name="action" value="reset" />
-&nbsp;&nbsp;&nbsp;<small>WARNING THIS RESTORES ALL DEFAULTS</small>
+<small>WARNING THIS RESTORES ALL DEFAULTS</small>
 </p>
 </form>
 	</div>

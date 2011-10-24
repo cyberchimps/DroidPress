@@ -20,8 +20,8 @@
 	
 		<div class="content_padding">
 
-			<div class="error">Error 404<br />
-				<center></center><img src="<?php echo get_template_directory_uri() ;?>/images/confusedchimp.png" height="400" width="400" /></center>
+			<div class="error">Error 404 <br />
+				<img src="<?php echo get_template_directory_uri() ;?>/images/confusedchimp.png" height="400" width="400" />
 			</div>
 		
 		</div><!--end content_padding-->
@@ -34,6 +34,6 @@
 	
 </div><!--end content_wrap-->
 
-<div style=clear:both;></div><!--clear-->
+<div style="clear:both;"></div><!--clear-->
 
 <?php get_footer(); ?>

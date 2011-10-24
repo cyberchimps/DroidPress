@@ -124,10 +124,10 @@ function droidpress_plusone(){
 }
 add_action('wp_head', 'droidpress_plusone');
 
-// Call Superfish/jQuery
+// Call Superfish
 if ( !is_admin() ) 
 {
-	function droidpress_frontend_scripts()
+	function droidpress_superfish()
  	{  
    
     	// Adjust the below path to where scripts dir is, if you must.
@@ -140,9 +140,9 @@ if ( !is_admin() )
    		 //load the scripts.
     	wp_enqueue_script('superfish');
     	wp_enqueue_script('sf-menu');
-    	wp_enqueue_script('jquery');
+    	
   	}
-add_action('wp_enqueue_scripts', 'droidpress_frontend_scripts');
+add_action('wp_enqueue_scripts', 'droidpress_superfish');
 }
 	
 // Register menu names

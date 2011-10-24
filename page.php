@@ -65,5 +65,5 @@
 	
 </div><!--end content_wrap-->
 
-<div style=clear:both;></div>
+<div style="clear:both;"></div>
 <?php get_footer(); ?>

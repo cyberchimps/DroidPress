@@ -77,6 +77,7 @@ h6 {
 
 .archive_posts_title {
 	margin-bottom: 10px;
+	margin-left: -2px;
 }
 
 .archive_posts_title a {
@@ -273,6 +274,10 @@ input[type=text] { width: 120px; }
 
 .content_padding { padding: 2px 8px 8px 2px; }
 
+#404_img {
+	text-align: center;
+}
+
 /* Posts Styling */
 
 .post_container {
@@ -328,10 +333,15 @@ ol {
 
 .entry {
 	padding-top: 5px;
+	padding-left: 2px;
 }
 
 .entry a {
 	color:  #3B5A7B;
+}
+
+.entry p {
+	clear: none;
 }
 
 .entry a:hover {
@@ -944,13 +954,15 @@ li { padding-left: 5px; }
 	max-width: 200px;
 	float: right;
 	position: relative;
+	margin-top: 8px;
 }
 
 #afterfootermenu {
 	float:left;
 	position: absolute;
 	width: 400px;
-	height: 40px;
+	height: 34px;
+	margin-top: 8px;
 	overflow: hidden;
 }
 
@@ -969,7 +981,7 @@ li { padding-left: 5px; }
 	display: inline; 
 }
 
-.credit { height: 22px; width: 148px; z-index: 99;margin: auto;	}
+.credit { height: 22px; width: 142px; z-index: 99;margin: auto;	margin-top: 5px;}
 
 /* Nav */
 
@@ -1127,13 +1139,13 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** arrows **/
 .sf-menu a.sf-with-ul {
-    padding-right:  15px;
+    padding-right:  20px;
     min-width:      1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {
     position:       absolute;
     display:        block;
-    right:          3px;
+    right:          6px;
     top:            1.05em; /* IE6 only */
     width:          10px;
     height:         10px;
