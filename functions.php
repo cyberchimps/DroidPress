@@ -124,6 +124,12 @@ function droidpress_plusone(){
 }
 add_action('wp_head', 'droidpress_plusone');
 
+// Load jQuery
+ 	
+if ( !is_admin() ) {
+    wp_enqueue_script('jquery');
+}
+
 // Call Superfish
 if ( !is_admin() ) 
 {
