@@ -4,6 +4,10 @@ DroidPress Changelog
 Version 1.0.5 (11-02-2011)
 -Added jQuery call in functions.php.
 -Adjusted various HTML element styles (tables, definition lists, blockquotes).
+-Added a bottom margin to meta category links. 
+-Fixed line height on post titles. 
+-Adjusted margin on post formats icons. 
+-Fixed comment element in byline information not being hidden when disabled via theme options. 
 
 Version 1.0.4 (10-23-2011)
 -Fixed margin on archive post title. 
