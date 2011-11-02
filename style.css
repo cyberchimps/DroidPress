@@ -102,9 +102,22 @@ ul, ol {
 	padding-left: 2px;	
 }
 
-dt {font-weight: bold;}
+dt {font-weight: bold; margin-top: 5px; margin-bottom: 5px; margin-left: 26px; }
 
-dd {margin-bottom: 1.625em; }
+dd {margin-bottom: 15px; margin-left: 26px; }
+
+th { padding-right: 30px; padding-bottom: 10px; }
+
+td {
+border-top: 1px solid #DDD;
+padding: 6px 10px 6px 0;
+}
+
+table {border-bottom: 1px solid #DDD;}
+
+fieldset {border: none;}
+
+pre {margin-left: 20px;}
 
 /* Header  */
 
@@ -454,7 +467,9 @@ p {
 blockquote { 
 	background-color: #97C03D;
 	margin: 10px;
-	padding: 5px;
+	padding: 10px;
+	font-style: italic;
+}
 }
 
 blockquote p { }
@@ -468,6 +483,7 @@ blockquote p { }
 	padding: 3px; 
 	margin-right:4px;
 	margin-top: -2px;
+	margin-bottom: 5px;
 }
 
 .meta-category a:hover {
@@ -1517,7 +1533,12 @@ p.comment-form-comment {
 
 form { }
 
-textarea { }
+textarea {
+	margin-top: 10px;
+	padding-bottom: 10px; 
+	width: 90%
+	
+ }
 
 @media print {
 
