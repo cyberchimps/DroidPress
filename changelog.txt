@@ -1,6 +1,10 @@
 DroidPress Changelog
 
 ****************************
+Version 1.0.6 (12-12-2011)
+-Visual tweak to theme options panel for WordPress 3.3 compatibility. 
+-Removed jQuery call. 
+
 Version 1.0.5 (11-02-2011)
 -Added jQuery call in functions.php.
 -Adjusted various HTML element styles (tables, definition lists, blockquotes).

@@ -61,7 +61,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .menu ul{
-    margin: 0; padding: 0;
+    margin-top: 11px; padding: 0;
     float: left;}
  
 .menu ul li{
