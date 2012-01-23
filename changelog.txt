@@ -1,6 +1,10 @@
 DroidPress Changelog
 
 ****************************
+Version 1.0.7 (01-23-2011)
+-Fixed bug with comments form.
+
+
 Version 1.0.6 (12-12-2011)
 -Visual tweak to theme options panel for WordPress 3.3 compatibility. 
 -Removed jQuery call. 

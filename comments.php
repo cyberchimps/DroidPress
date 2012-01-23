@@ -61,9 +61,6 @@
 		<?php endif; ?>
 
 		<!--<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->	
-		
-		
-		<?php do_action('comment_form', $post->ID); ?>
 
 	</form>
 	
