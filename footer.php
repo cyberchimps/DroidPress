@@ -98,9 +98,13 @@
 			<!--Inserts Afterfooter Menu-->
 			
 			<div id="afterfootermenu">
-			<?php wp_nav_menu( array(
+			<?php 
+			  if( has_nav_menu( 'footer-menu' ) ) :
+				wp_nav_menu( array(
 	   			'theme_location' => 'footer-menu', // Setting up the location for the main-menu, Main Navigation.
-	    	)); ?>
+	    	));
+			  endif;	
+			 ?>
 			</div>
 					<div id="credit">
 						<?php get_template_part('credit', 'footer' ); ?>

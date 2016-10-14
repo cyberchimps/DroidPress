@@ -4,8 +4,9 @@ Theme URI: http://cyberchimps.com/droidpress/
 Description: A free premium WordPress theme designed by CyberChimps.com inspired by the popular Android mobile phone operating system by Google. DroidPress features post formats support, page level SEO options, social icons, widgetized sidebar and footer, and typography support including Google Fonts.
 Author: CyberChimps
 Author URI: http://cyberchimps.com/
-Version: 1.0.7
-Tags: green, blue, dark, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
+Version: 1.1
+Tags: two-columns, custom-header, custom-menu, threaded-comments, sticky-post
+Text Domain: droidpress
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -919,7 +920,6 @@ li { padding-left: 5px; }
 
 .footer-widgets {
 	float: left;
-	width: 225px;
 	margin-top: 10px;
 	margin-left: 18px;
 	padding-bottom: 15px;
@@ -1005,9 +1005,8 @@ li { padding-left: 5px; }
 
 #navbackground {
 	width: 980px;
-	display: block;
+	display: inline-block;
 	background-color: #3b5a7b;
-	height: 39px;
 	border-top: 3px solid #fff;
 	border-left: 3px solid #fff;
 	border-right: 3px solid #fff;
@@ -1050,9 +1049,9 @@ li { padding-left: 5px; }
 
 }
 .sf-menu li {
-    float:          left;
-    position:       relative;  
-    padding: 0px 5px 0px 5px;
+    float: left;
+    position: relative;  
+    padding: 1px 5px;
     background: transparent;
 }
 .sf-menu a { /* Nav link color */
@@ -1424,7 +1423,6 @@ a.comment-reply-link > span {
 	min-width: 60px;
 	padding: 4px 10px;
 	position: relative;
-	top: 40px;
 	z-index: 1;
 }
 #respond input[type="text"]:focus,
