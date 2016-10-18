@@ -1,10 +1,10 @@
 DroidPress Changelog
 
 ****************************
-Version 1.1 (10-14-2016)
-- Compatibility issues fix for WordPress 4.6.1
+Version 1.1 (10-19-2016)
+- Changes done as per the new WordPress guideline
 - Fixes css issues for footer widget
-- Remove JS warnings on front end.
+- Fixed warnings
 
 Version 1.0.7 (01-23-2011)
 -Fixed bug with comments form.
