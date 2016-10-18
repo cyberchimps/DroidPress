@@ -89,7 +89,9 @@ add_filter('excerpt_length', 'droidpress_new_excerpt_length');
 	
 	
 // This theme allows users to set a custom background
-	add_custom_background();
+	add_theme_support( 'custom-background' );
+
+	add_theme_support( "title-tag" );
 	
 // This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
@@ -140,6 +142,7 @@ if ( !is_admin() )
     	wp_register_script( 'sf-menu', $scriptdir.'sf-menu.js');
    
    		 //load the scripts.
+	wp_enqueue_script('jquery');
     	wp_enqueue_script('superfish');
     	wp_enqueue_script('sf-menu');
     	
