@@ -28,34 +28,35 @@
 	</div><!--end main-->
 </div><!--end page_wrap-->			
 	
-		
-<div id="footer">
-    <div id="footer_wrap">
-    	
+
+<div id="footer" class="col-md-12">
+
+    <div class="container wrapper">
+        <div class="row">
     	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer") ) : ?>
 		
-		<div class="footer-widgets">
+		<div class="footer-widgets col-xs-12 col-sm-6 col-md-3">
 			<h3 class="footer-widget-title">Recent Posts</h3>
 			<ul>
 				<?php wp_get_archives('type=postbypost&limit=4'); ?>
 			</ul>
 		</div>
 		
-		<div class="footer-widgets">
+		<div class="footer-widgets col-xs-12 col-sm-6 col-md-3">
 			<h3 class="footer-widget-title">Archives</h3>
 			<ul>
 				<?php wp_get_archives('type=monthly&limit=16'); ?>
 			</ul>
 		</div>
 
-		<div class="footer-widgets">
+		<div class="footer-widgets col-xs-12 col-sm-6 col-md-3">
 			<h3 class="footer-widget-title">Links</h3>
 			<ul>
 				<?php wp_list_bookmarks('categorize=0&title_li='); ?>
 			</ul>
 		</div>
 
-		<div class="footer-widgets">
+		<div class="footer-widgets col-xs-12 col-sm-6 col-md-3">
 			<h3 class="footer-widget-title">WordPress</h3>
 			<ul>
     		<?php wp_register(); ?>
@@ -70,18 +71,19 @@
 		<!--Inserts Google Analytics Code-->
 		
 		<?php echo stripslashes($analytics); ?>
-			   
+        </div>	   
 	</div><!--end footer_wrap-->
 </div><!--end footer-->
 	
 	<div id="afterfooter">
 	
-		<div id="afterfooterwrap">
+		<div id="afterfooterwrap" class="container">
+                    <div class="row">
 		
 				<!--Inserts Copyright Text-->
 				<?php if ($copyright == ''): ?> 
 				
-					<div id="afterfootercopyright">
+					<div id="afterfootercopyright" class="col-md-3">
 						&copy; <?php echo bloginfo ( 'name' );  ?>
 					</div>
 					
@@ -89,7 +91,7 @@
 				
 				<?php if ($copyright != ''):?> 
 				
-					<div id="afterfootercopyright">
+					<div id="afterfootercopyright" class="col-md-3">
 						&copy; <?php echo $copyright; ?>
 					</div>
 					
@@ -97,7 +99,7 @@
 				
 			<!--Inserts Afterfooter Menu-->
 			
-			<div id="afterfootermenu">
+			<div id="afterfootermenu" class="col-md-3">
 			<?php 
 			  if( has_nav_menu( 'footer-menu' ) ) :
 				wp_nav_menu( array(
@@ -106,10 +108,10 @@
 			  endif;	
 			 ?>
 			</div>
-					<div id="credit">
+					<div id="credit" class="col-md-3">
 						<?php get_template_part('credit', 'footer' ); ?>
 					</div>
-			
+                    </div>
 		</div>  <!--end afterfooterwrap-->	
 		
 	</div> <!--end afterfooter-->	

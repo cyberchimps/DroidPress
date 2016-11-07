@@ -199,7 +199,7 @@ function droidpress_widgets_init() {
 		'name' => 'Footer',
 		'id' => 'footer-widgets',
 		'description'   => 'These are widgets for the footer',
-		'before_widget' => '<div class="footer-widgets">',
+		'before_widget' => '<div class="footer-widgets col-xs-12 col-sm-6 col-md-4">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="footer-widget-title">',
 		'after_title' => '</h3>',
@@ -212,4 +212,17 @@ add_action( 'widgets_init', 'droidpress_widgets_init' );
 require_once ( get_template_directory() . '/library/options/options-core.php' );
 require_once ( get_template_directory() . '/library/options/meta-box.php' );
 require_once ( get_template_directory() . '/library/options/options-themes.php' );
+
+
+add_action( 'wp_enqueue_scripts', 'include_styles', 10 );
+function include_styles(){
+    $directory_uri  = get_template_directory_uri();
+    $bootstrap_path = $directory_uri . '/library/';
+    wp_enqueue_style( 'bootstrap-style', $bootstrap_path . 'css/bootstrap.min.css');
+    wp_enqueue_style( 'main-style', $directory_uri . '/style.css' );
+
+}
+
+ 
+
 ?>

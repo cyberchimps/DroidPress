@@ -16,21 +16,21 @@
 
 <div id="content_wrap">
 
-	<div id="content_left">
+	<div class="col-md-8">
 	
 		<div class="content_padding">
 
 			<div class="error">Error 404 <br />
-				<img src="<?php echo get_template_directory_uri() ;?>/images/confusedchimp.png" height="400" width="400" />
+				<img class="img-responsive" src="<?php echo get_template_directory_uri() ;?>/images/confusedchimp.png" height="400" width="400" />
 			</div>
 		
 		</div><!--end content_padding-->
 		
 	</div><!--end content_left-->
 
-	<div id="sidebar_right">
+	
 		<?php get_sidebar(); ?>
-	</div>
+	
 	
 </div><!--end content_wrap-->
 

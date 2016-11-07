@@ -13,7 +13,7 @@
 		return;
 	}
 ?>
-
+              
 <?php if ( have_comments() ) : ?>
 	<br />
 	<h2 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?></h2>
@@ -46,7 +46,7 @@
 
 <?php if ( comments_open() ) : ?>
 
-<div id="respond">
+<div id="respond" class="col-md-12">
 
 	<div class="cancel-comment-reply">
 		<?php cancel_comment_reply_link(); ?>

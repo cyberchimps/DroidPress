@@ -16,8 +16,7 @@
 ?>
 
 <div id="content_wrap">
-
-	<div id="content_left">
+	<div class="col-md-8">
 		
 		<div class="content_padding">
 		
@@ -85,11 +84,11 @@
 	<?php endif; ?>
 		</div><!--end content_padding-->
 		
-	</div><!--end content_left-->
-
-	<div id="sidebar_right">
-		<?php get_sidebar(); ?>
 	</div>
+
+	
+		<?php get_sidebar(); ?>
+	
 	
 </div><!--end content_wrap-->
 

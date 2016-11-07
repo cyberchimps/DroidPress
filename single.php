@@ -26,7 +26,7 @@ get_header(); ?>
 
 <div id="content_wrap">
 	
-	<div id="content_left">
+	<div class="col-md-8">
 	
 		<div class="content_padding">
 		
