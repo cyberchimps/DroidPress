@@ -23,7 +23,7 @@
 ?>
 
 <div id="content_wrap">
-	
+    
 	<div class="col-md-8">
 
 		<div class="content_padding">

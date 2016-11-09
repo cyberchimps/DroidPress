@@ -95,7 +95,8 @@
 </head>
 
 <body style="font-family:'<?php echo $fontstrip ?>', Helvetica, serif ;" <?php body_class(); ?> >
-  
+
+   
 	<div class="container wrapper">
 		
 			<div id="header">
@@ -107,6 +108,7 @@
 					</div><!-- end header_right -->
 							<div id="sitename">
 								<h1 class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></h1>
+                                                                <h3 class="tagline"><?php bloginfo('description'); ?> </h3> 
 							</div>
 				</div><!-- end headerwrap -->
 				<?php get_template_part('nav', 'header' ); ?>

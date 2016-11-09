@@ -194,7 +194,15 @@ pre {margin-left: 20px;}
 	-moz-text-shadow:0 0 3px #000;
     -webkit-text-shadow:0 0 3px #000;
     text-shadow:0 0 3px #000;
-    margin: 15px;
+    margin: 5px 10px;
+}
+
+#sitename h1, #sitename h3, .post .posts_title{
+    word-break: break-all;
+}
+
+.tagline{
+    margin: 5px 10px 10px ;
 }
 
 .sitename a {
@@ -299,6 +307,10 @@ input[type=text] { width: 120px; }
 
 #sfwrapper a{
     text-decoration:none;
+}
+
+.entry img, .entry iframe {
+    width: 100%;
 }
 /* Posts Styling */
 
@@ -458,7 +470,7 @@ p {
 	margin: 10px;
 	padding-top: 4px;
 	text-align: center;
-	max-width: 620px;
+	max-width: 100%;
 }
 
 .wp-caption img {
@@ -516,7 +528,9 @@ blockquote p { }
 
 .gallery-caption { }
 
-.navigation { }
+.navigation {
+    margin-bottom: 10%;
+}
 
 .next-posts { float: left; }
 
@@ -957,6 +971,7 @@ li { padding-left: 5px; }
 	width: 100%; 
 	background: #333; 
 	color: white;
+        display:inline-block;
 
 }
 
@@ -972,6 +987,7 @@ li { padding-left: 5px; }
 
 #afterfootercopyright {
 	margin-top: 8px;
+        word-break: break-all;
 }
 
 #afterfootermenu {
@@ -1111,11 +1127,11 @@ ul.sf-menu li li li.sfHover ul {
     font-weight:    	700;
     background-color: 	#495f87;
     border: 1px solid #000;
-    border-bottom:none;
+    border-bottom:none !important;
 }
 
 .sf-menu a:hover{
-    padding:            10px 10px 10px 10px;   
+      
     font-weight:    	700;
     background-color: 	#97c03d;
     border: 1px solid #000;
@@ -1982,6 +1998,18 @@ a.nivo-prevNav {
 	    top: 0;
             position:unset;
 	}
+        .commentlist .children li.comment .fn{
+            display: initial;
+            margin-left: unset;
+        }
+        .commentlist .children .says{
+            display: initial;
+            margin-left: unset;
+        }
+        
+        .navigation{
+            margin-bottom:20%;
+        }
         
         
 }

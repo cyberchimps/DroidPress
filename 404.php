@@ -21,6 +21,8 @@
 		<div class="content_padding">
 
 			<div class="error">Error 404 <br />
+                            <h3> Nothing found for the requested page. Please try a search instead.</h3>
+                            <?php get_search_form(); ?> <br />
 				<img class="img-responsive" src="<?php echo get_template_directory_uri() ;?>/images/confusedchimp.png" height="400" width="400" />
 			</div>
 		

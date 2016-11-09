@@ -40,7 +40,8 @@
 				<div class="archive-title">Archive for <?php the_time('Y'); ?>:</div><br />
 
 			<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<div class="archive-title"><Author Archive:</div><br />
+				<div class="archive-title">Author : <?php the_author(); ?></div><br />
+                                
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<div class="archive-title">Blog Archives:</div><br />
