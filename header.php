@@ -82,7 +82,6 @@
 
 
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
-<!--<link rel="stylesheet" href="<?php //bloginfo('stylesheet_url'); ?>" type="text/css" />-->
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 

@@ -1,6 +1,9 @@
 DroidPress Changelog
 
 ****************************
+Version 1.2 (11-17-2016)
+- Made Droidpress responsive
+
 Version 1.1 (10-21-2016)
 - Changes done as per the new WordPress guideline
 - Fixed warnings
