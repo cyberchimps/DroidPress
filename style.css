@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/droidpress/
 Description: A free premium WordPress theme designed by CyberChimps.com inspired by the popular Android mobile phone operating system by Google. DroidPress features post formats support, page level SEO options, social icons, widgetized sidebar and footer, and typography support including Google Fonts.
 Author: CyberChimps
 Author URI: http://cyberchimps.com/
-Version: 1.1
+Version: 1.2
 Tags: two-columns, custom-header, custom-menu, threaded-comments, sticky-post
 Text Domain: droidpress
 License: GNU General Public License v2.0
@@ -16,7 +16,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 p {line-height: 1.6em;}
 
 * { margin: 0; padding: 0; }
-body { font-size: 14px;background-color: #303030;	}
+body { overflow-x:hidden; font-size: 14px;background-color: #303030;	}
 
 .screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
 .clear { clear: both; }
@@ -25,18 +25,17 @@ body { font-size: 14px;background-color: #303030;	}
 
 /* Page Layout  */
 
-#page-wrap { 
-	width: 980px; 
-	margin: auto;
-	margin-bottom: 10px;
-}
+
 
 #main { 
-	width: 980px;
 	background-color: white;
 	border: 3px solid #fff;
 	border-radius: 0px 0px 2px 2px;
 	-moz-border-radius: 0px 0px 2px 2px;
+}
+
+textarea{
+    box-shadow: none !important;
 }
 .
 /* Fonts  */
@@ -127,8 +126,7 @@ pre {margin-left: 20px;}
 }
 
 #headerwrap { 
-	width: 980px;
-	height: 40px;
+	
 	background: #3b5a7b url(./images/droidman.png) no-repeat scroll left top;
 	border-bottom: 3px solid #fff;
 	border-left: 3px solid #fff;
@@ -179,12 +177,13 @@ pre {margin-left: 20px;}
 
 #header_right {
 	float: right;
-	margin-right: 5px;
-	width: 335px;
+	margin:15px;
+	
 	
 }
 
 #sitename {
+        display:inline-block;
 	padding: 1px 0 0 5px;
 }
 
@@ -195,6 +194,15 @@ pre {margin-left: 20px;}
 	-moz-text-shadow:0 0 3px #000;
     -webkit-text-shadow:0 0 3px #000;
     text-shadow:0 0 3px #000;
+    margin: 5px 10px;
+}
+
+#sitename h1, #sitename h3, .post .posts_title{
+    word-break: break-all;
+}
+
+.tagline{
+    margin: 5px 10px 10px ;
 }
 
 .sitename a {
@@ -228,14 +236,13 @@ pre {margin-left: 20px;}
 /* Search Bar */
 
 #searchbar  {
-	width: 200px;
-	float: right;
-	margin-top: 5px;
+	
+	margin: 10px 0;
 }
 
 .searchform {
 	background-color: #fff;
-	width: 190px;
+	
 	padding: 0;
 	height: 25px;	
 	color: #3b3b3b;
@@ -251,14 +258,11 @@ pre {margin-left: 20px;}
 .searchform .s{
 	margin:0;
 	border: none;
-	margin: 4px 2px 3px 3px;
-	margin: 3px 2px 3px 2px\9;
-	height: 16px;
-	width:	180px;
+	width:	100%;
 	color: #666;
 	font-size: 16px;
 	font-weight: normal;
-	overflow: hidden;
+	
 }
 	
 .searchform .s:focus { outline: 0; border: none; }
@@ -279,10 +283,7 @@ input[type=text] { width: 120px; }
 	margin: 5px 0 5px 0;
 }
 
-#content_left {
-	float: left;
-	width: 660px;
-}
+
 
 #content_fullwidth { width: 100%; }
 
@@ -292,12 +293,31 @@ input[type=text] { width: 120px; }
 	text-align: center;
 }
 
+.error img{
+    display:unset;
+}
+
+.wrapper{
+    padding:0 5% 10px 5%;
+}
+
+#footer .row{
+    padding:0 2%;
+}
+
+#sfwrapper a{
+    text-decoration:none;
+}
+
+.entry img, .entry iframe {
+    width: 100%;
+}
 /* Posts Styling */
 
 .post_container {
 	background-color: #fff;
 	margin-bottom: 25px;
-	padding: 0 15px 5px 25px;
+	
 }
 
 .post_container ul {	
@@ -450,7 +470,7 @@ p {
 	margin: 10px;
 	padding-top: 4px;
 	text-align: center;
-	max-width: 620px;
+	max-width: 100%;
 }
 
 .wp-caption img {
@@ -508,7 +528,9 @@ blockquote p { }
 
 .gallery-caption { }
 
-.navigation { }
+.navigation {
+    margin-bottom: 10%;
+}
 
 .next-posts { float: left; }
 
@@ -524,7 +546,7 @@ blockquote p { }
 
 .format-icon {
 	float: left;
-	margin-left: -55px;
+	margin-left: -10%;
 	margin-top: -4px;
 }
 
@@ -621,7 +643,7 @@ label[for="comment"] {display: block;}
 
 #sidebar { 
 	margin: auto;	
-	width: 300px;
+	
 	margin-top: 0px;
 	margin-bottom: 10px;
 	margin-top: 5px;
@@ -913,16 +935,10 @@ li { padding-left: 5px; }
 	border-bottom: 1px solid #D1ECB8;
 }
 
-#footer_wrap {
-	margin: auto;
-	width: 980px;
-}
 
 .footer-widgets {
-	float: left;
-	width: 225px;
 	margin-top: 10px;
-	margin-left: 18px;
+	
 	padding-bottom: 15px;
 	color: #ccc;	
 }
@@ -955,6 +971,7 @@ li { padding-left: 5px; }
 	width: 100%; 
 	background: #333; 
 	color: white;
+        display:inline-block;
 
 }
 
@@ -963,26 +980,19 @@ li { padding-left: 5px; }
 }
 
 #afterfooterwrap {
-	width: 980px; 
-	height:45px; 
+	
 	margin: auto;
 	padding-top: 10px;
 }
 
 #afterfootercopyright {
-	max-width: 200px;
-	float: right;
-	position: relative;
 	margin-top: 8px;
+        word-break: break-all;
 }
 
 #afterfootermenu {
-	float:left;
-	position: absolute;
-	width: 400px;
-	height: 34px;
+	
 	margin-top: 8px;
-	overflow: hidden;
 }
 
 #afterfootermenu a {
@@ -1005,7 +1015,8 @@ li { padding-left: 5px; }
 /* Nav */
 
 #navbackground {
-	width: 980px;
+	display: inline-block;
+        width: 100%;
 	display: inline-block;
 	background-color: #3b5a7b;
 	border-top: 3px solid #fff;
@@ -1017,8 +1028,7 @@ li { padding-left: 5px; }
 }
 
 #sfwrapper {
-    float:              left;
-    width: 				78%;
+    
     background:         transparent;
     font-size:          1em;
 }
@@ -1052,7 +1062,7 @@ li { padding-left: 5px; }
 .sf-menu li {
     float: left;
     position: relative;  
-    padding: 1px 5px;
+    padding: 0px 5px;
     background: transparent;
 }
 .sf-menu a { /* Nav link color */
@@ -1104,23 +1114,24 @@ ul.sf-menu li li li.sfHover ul {
 /* The container wrapping .sf-menu */
 
 .sf-menu {
-    float:              left;
-    width:              100%;
-    margin-top: 		7px;
+    float: left;
+    width: 100%;
+    margin: 10px 10px 0 0;  
 }
 .sf-menu li {
     background:         transparent;
     z-index: 2000;
 }
 .sf-menu a {
-    padding:            8px 10px 10px 10px;   
+    padding:            10px 10px 10px 10px;   
     font-weight:    	700;
     background-color: 	#495f87;
     border: 1px solid #000;
+    border-bottom:none !important;
 }
 
 .sf-menu a:hover{
-    padding:            8px 10px 10px 10px;   
+      
     font-weight:    	700;
     background-color: 	#97c03d;
     border: 1px solid #000;
@@ -1228,7 +1239,7 @@ li.sfHover > a > .sf-sub-indicator {
 	list-style: none;
 	margin-left: 66px;
 	margin-top: 10px;
-	width: 85.9%;
+	
 }
 .content .commentlist,
 .page-template-sidebar-page-php .commentlist {
@@ -1279,7 +1290,7 @@ li.sfHover > a > .sf-sub-indicator {
 }
 .commentlist .children li.comment .comment-meta {
 	line-height: 1.625em;
-	margin-left: 50px;
+	
 }
 .commentlist .children li.comment .comment-content {
 	margin: 1.625em 0 0;
@@ -1380,25 +1391,22 @@ a.comment-reply-link > span {
 /* Comment Form */
 #respond {
 	background: #ccc;
-	border: 1px solid #d3d3d3;
+	
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 1.625em;
+	
 	position: relative;
-	margin-left: 20px;
+	margin-bottom: 2%;
 	margin-top: 10px;
-	width: 85.9%
+	
 	
 }
 #respond input[type="text"],
 #respond textarea {
 	background: #fff;
-	border: 4px solid #eee;
+	border: none;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-	-moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-	box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
 	position: relative;
 	padding: 10px;
 	text-indent: 80px;
@@ -1433,7 +1441,7 @@ a.comment-reply-link > span {
 }
 #respond textarea {
 	resize: vertical;
-	width: 95%;
+	width: 100%;
 }
 #respond .comment-form-author .required,
 #respond .comment-form-email .required {
@@ -1452,10 +1460,7 @@ a.comment-reply-link > span {
 #respond p {
 	margin: 10px 0;
 }
-#respond .form-submit {
-	float: right;
-	margin: -20px 0 10px;
-}
+
 #respond input#submit {
 	background: #222;
 	border: none;
@@ -1469,7 +1474,7 @@ a.comment-reply-link > span {
 	font-size: 15px;
 	margin: 20px 0;
 	padding: 5px 42px 5px 22px;
-	position: relative;
+	
 	left: 30px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
 }
@@ -1519,8 +1524,8 @@ a.comment-reply-link > span {
 }
 #respond input[type=text] {
 	display: block;
-	height: 24px;
-	width: 75%;
+	
+	width: 100%;
 }
 #respond p {
 	font-size: 12px;
@@ -1538,6 +1543,7 @@ textarea {
 	margin-top: 10px;
 	padding-bottom: 10px; 
 	width: 90%
+        
 	
  }
 
@@ -1546,7 +1552,7 @@ textarea {
 .do-not-print { display: none; }
 #comments { page-break-before: always; }
 
-body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: 'Cantarell', arial, serif; color: #000; background: none; font-size: 12pt; }
+body {  width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: 'Cantarell', arial, serif; color: #000; background: none; font-size: 12pt; }
 
 h1 { font-size: 19pt; }
 h2 { font-size:17pt; }
@@ -1972,4 +1978,38 @@ a.nivo-prevNav {
 
 .caption a:hover, .caption a:hover {
 	background:#202020;
+}
+
+@media screen and (max-width:480px){ 
+   	.commentlist {
+    		list-style: outside none none;
+    		margin-top: 10px;
+                margin-left: 0;
+	}
+	ol {
+	    list-style-position: inside;
+            margin-left: 0;
+	}
+	.commentlist .avatar {
+	    border-radius: 3px;
+	    box-shadow: 0 1px 2px #ccc;
+	    left: -66px;
+	    padding: 0;
+	    top: 0;
+            position:unset;
+	}
+        .commentlist .children li.comment .fn{
+            display: initial;
+            margin-left: unset;
+        }
+        .commentlist .children .says{
+            display: initial;
+            margin-left: unset;
+        }
+        
+        .navigation{
+            margin-bottom:20%;
+        }
+        
+        
 }

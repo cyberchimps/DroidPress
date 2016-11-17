@@ -12,7 +12,7 @@
 <div id="navbackground">
 <div id="navcontainer">
 
-    <div id="sfwrapper">
+    <div id="sfwrapper" class="col-xs-12 col-sm-9 col-md-9">
         <?php wp_nav_menu( array(
 	    'theme_location' => 'header-menu', // Setting up the location for the main-menu, Main Navigation.
 	    'menu_class' => 'sf-menu', //Adding the class for dropdowns
@@ -22,7 +22,7 @@
 	);
     ?>
     </div>
-<div id="searchbar">
+<div id="searchbar" class="col-xs-12 col-sm-3 col-md-3">
 <?php get_search_form(); ?>
 </div>
 

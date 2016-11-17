@@ -18,15 +18,15 @@
 
 	$showfblike	= $options[$themeslug.'_show_fb_like'];
 	$showgplus		= $options[$themeslug.'_show_gplus'];
-
+        $share = $options[$themeslug.'_hide_share'];
 /* End variable definition. */	
 
 
 get_header(); ?>
 
 <div id="content_wrap">
-	
-	<div id="content_left">
+    <div class="row">
+	<div class="col-md-8">
 	
 		<div class="content_padding">
 		
@@ -68,8 +68,9 @@ get_header(); ?>
 							</div><!--end tags-->
 
 							<div class="postmetadata">
+                                                            <?php if ($share != '1'):?>
 									<?php get_template_part ('share', 'single' ); ?>
-								
+								<?php endif;?>
 							</div><!--end postmetadata-->
 							
 					</div><!--end post_class-->
@@ -82,7 +83,7 @@ get_header(); ?>
 	</div> <!--end content_left-->
 	
 	<?php get_sidebar(); ?>
-		
+    </div>	
 </div><!--end content_wrap-->
 <div style="clear:both;"></div>
 

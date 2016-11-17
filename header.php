@@ -79,37 +79,39 @@
 		<meta name="keywords" content="<?php echo $keywords ?>" />
 	<?php endif; ?>
 <!-- Page SEO options -->
-	
+
+
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 
 <link href='http://fonts.googleapis.com/css?family=<?php echo $font ?>' rel='stylesheet' type='text/css' />
-	
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+
+ 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     
 	<?php wp_head(); ?>
 	
 </head>
 
 <body style="font-family:'<?php echo $fontstrip ?>', Helvetica, serif ;" <?php body_class(); ?> >
-	
-	<div id="page-wrap">
+
+   
+	<div class="container wrapper">
 		
 			<div id="header">
 				<div id="headerwrap">
 					<div id="header_right">
-							<div id="social">
+							
 								<?php get_template_part('icons', 'header'); ?>
-							</div><!-- end social -->
+							
 					</div><!-- end header_right -->
 							<div id="sitename">
 								<h1 class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></h1>
+                                                                <h3 class="tagline"><?php bloginfo('description'); ?> </h3> 
 							</div>
 				</div><!-- end headerwrap -->
 				<?php get_template_part('nav', 'header' ); ?>
 			</div><!-- end header -->
 
-			<div id="main">
+			<div id="main" class="col-md-12">
 			

@@ -16,8 +16,7 @@
 ?>
 
 <div id="content_wrap">
-
-	<div id="content_left">
+	<div class="col-md-8">
 		
 		<div class="content_padding">
 		
@@ -41,7 +40,8 @@
 				<div class="archive-title">Archive for <?php the_time('Y'); ?>:</div><br />
 
 			<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<div class="archive-title"><Author Archive:</div><br />
+				<div class="archive-title">Author : <?php the_author(); ?></div><br />
+                                
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<div class="archive-title">Blog Archives:</div><br />
@@ -85,11 +85,11 @@
 	<?php endif; ?>
 		</div><!--end content_padding-->
 		
-	</div><!--end content_left-->
-
-	<div id="sidebar_right">
-		<?php get_sidebar(); ?>
 	</div>
+
+	
+		<?php get_sidebar(); ?>
+	
 	
 </div><!--end content_wrap-->
 
