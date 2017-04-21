@@ -1,6 +1,9 @@
 DroidPress Changelog
 
 ****************************
+Version 1.2 (04/21/2017)
+- Fixed issue with PHP version 7.1
+
 Version 1.1 (10-21-2016)
 - Changes done as per the new WordPress guideline
 - Fixed warnings
