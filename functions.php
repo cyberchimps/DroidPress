@@ -212,8 +212,8 @@ add_action( 'widgets_init', 'droidpress_widgets_init' );
 require_once ( get_template_directory() . '/library/options/options-core.php' );
 require_once ( get_template_directory() . '/library/options/meta-box.php' );
 require_once ( get_template_directory() . '/library/options/options-themes.php' );
-add_action( 'admin_notices', 'my_admin_notice' );
-function my_admin_notice(){
+add_action( 'admin_notices', 'droidpress_admin_notice' );
+function droidpress_admin_notice(){
 	global $droidpress_check_screen;
 	$droidpress_check_screen = get_admin_page_title();
  
