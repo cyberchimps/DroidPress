@@ -222,4 +222,94 @@ function droidpress_admin_notice(){
           echo '<div class="notice notice-info is-dismissible"><p class="droidpress-upgrade-callout" style="font-size:18px; "><a href="https://cyberchimps.com/free-download-50-stock-images-use-please/?utm_source=DroidPress" target="_blank" style="text-decoration:none;">FREE - Download CyberChimps\' Pack of 50 High-Resolution Stock Images Now</a></p></div>';
 }
 }
-?>
+
+
+function droidpress_customize_edit_links( $wp_customize ) {
+
+   $wp_customize->selective_refresh->add_partial( 'blogname', array(
+'selector' => '.sitename a'
+) );
+
+	$wp_customize->selective_refresh->add_partial( 'nav_menu_locations[header-menu]', array(
+		'selector' => '#navbackground'
+	) );
+
+	$wp_customize->selective_refresh->add_partial( 'nav_menu_locations[footer-menu]', array(
+		'selector' => '#credit'
+	) );
+
+}
+add_action( 'customize_register', 'droidpress_customize_edit_links' );
+add_theme_support( 'customize-selective-refresh-widgets' );
+
+add_action( 'admin_notices', 'droidpress_admin_notices' );
+function droidpress_admin_notices()
+{
+	$admin_check_screen = get_admin_page_title();
+
+	if( !class_exists('SlideDeckPlugin') )
+	{
+	$plugin='slidedeck/slidedeck.php';
+	$slug = 'slidedeck';
+	$installed_plugins = get_plugins();
+
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+		?>
+		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
+		<p>
+			<?php if( isset( $installed_plugins[$plugin] ) )
+			{
+			?>
+				 <a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the SlideDeck Lite plugin</a>
+			 <?php
+			}
+			else
+			{
+			 ?>
+			 <a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the SlideDeck Lite plugin</a>
+			 <?php } ?>
+
+		</p>
+		</div>
+		<?php
+	}
+	}
+
+	if( !class_exists('WPForms') )
+	{
+	$plugin = 'wpforms-lite/wpforms.php';
+	$slug = 'wpforms-lite';
+	$installed_plugins = get_plugins();
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+		?>
+		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
+		<p>
+			<?php if( isset( $installed_plugins[$plugin] ) )
+			{
+			?>
+				 <a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the WPForms Lite plugin</a>
+			 <?php
+			}
+			else
+			{
+			 ?>
+	 		 <a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the WP Forms Lite plugin</a>
+			 <?php } ?>
+		</p>
+		</div>
+		<?php
+	}
+	}
+
+	if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+	?>
+		<div class="notice notice-success is-dismissible">
+				<b><p>Liked this theme? <a href="https://wordpress.org/support/theme/droidpress/reviews/#new-post" target="_blank">Leave us</a> a ***** rating. Thank you! </p></b>
+		</div>
+		<?php
+	}
+
+}

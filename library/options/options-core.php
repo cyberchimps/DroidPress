@@ -24,7 +24,7 @@ function theme_options_init() {
 	register_setting( $themeslug.'_options', ''.$themename.'', 'theme_options_validate' );
 	 
 
-	wp_register_script($themeslug.'jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"), false, '1.4.4');
+    wp_enqueue_script('jquery');
     wp_register_script($themeslug.'jqueryui', get_template_directory_uri(). '/library/js/jquery-ui.js');
     wp_register_script($themeslug.'jquerycookie', get_template_directory_uri(). '/library/js/jquery-cookie.js');
     wp_register_script($themeslug.'cookie', get_template_directory_uri(). '/library/js/cookie.js');
