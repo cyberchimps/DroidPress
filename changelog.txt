@@ -1,6 +1,10 @@
 DroidPress Changelog
 
 ****************************
+Version 1.3 (08/01/2017)
+- Added visible edit links in the customizer preview
+- Fixed javascript warnings
+
 Version 1.2 (04/21/2017)
 - Fixed issue with PHP version 7.1
 

@@ -84,9 +84,11 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-
+<?php   if( $font !== 'Arial' )
+	{
+ ?>
 <link href='http://fonts.googleapis.com/css?family=<?php echo $font ?>' rel='stylesheet' type='text/css' />
-	
+<?php   } ?>
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     
 	<?php wp_head(); ?>
