@@ -253,7 +253,7 @@ function droidpress_admin_notices()
 	$slug = 'slidedeck';
 	$installed_plugins = get_plugins();
 
-	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'DroidPress Settings' )
 	{
 		?>
 		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
@@ -281,7 +281,7 @@ function droidpress_admin_notices()
 	$plugin = 'wpforms-lite/wpforms.php';
 	$slug = 'wpforms-lite';
 	$installed_plugins = get_plugins();
-	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'DroidPress Settings' )
 	{
 		?>
 		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
@@ -303,7 +303,7 @@ function droidpress_admin_notices()
 	}
 	}
 
-	if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'DroidPress Settings' )
 	{
 	?>
 		<div class="notice notice-success is-dismissible">

@@ -109,8 +109,7 @@ function theme_options_do_page() {
 <br />
 <div class="titletext">DroidPress</div>
 <br />
-<div class="upgrade"><a href="http://cyberchimps.com/droidpresspro/" target="_blank">Upgrade to DroidPress Pro</a> Pro includes a featured posts section, a feature slider, post formats support, and more.</div>
-<br />
+
 <?php if ( false !== $_REQUEST['updated'] ) { ?>
 		<?php echo '<div id="message" class="updated fade" style="float:left;"><p><strong>'.$name.' settings saved</strong></p></div>'; ?>
     
