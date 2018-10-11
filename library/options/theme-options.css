@@ -1,10 +1,10 @@
-/* 
+/*
 
 Portions of this code written by Blogatize http://blogatize.net
 
 License: GNU General Public License v2.0
 
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 */
 
@@ -51,7 +51,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	color: #fff;
     background-color:#444;
     border: 1px solid #777;
-}    
+}
 
 
 .menu {
@@ -63,10 +63,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .menu ul{
     margin-top: 11px; padding: 0;
     float: left;}
- 
+
 .menu ul li{
     display: inline;margin-right: 5px;}
- 
+
 .menu ul li a{
     text-decoration: none;
     font-size: 14px;
@@ -77,7 +77,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
- 
+
 .menu ul li a:hover, .menu ul li .current{
     color: #fff;
     background-color:#444;
@@ -112,7 +112,7 @@ input.button-primary {font-size:14px !important;}
 }
 
 #themesheader {
-	margin: 0 0 30px 0;	
+	margin: 0 0 30px 0;
 }
 
 .pro {
@@ -210,3 +210,6 @@ input.button-primary {font-size:14px !important;}
 .ui-corner-right {  -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
 .ui-corner-left { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
 .ui-corner-all { -moz-border-radius: 4px/*{cornerRadius}*/; -webkit-border-radius: 4px/*{cornerRadius}*/; border-radius: 4px/*{cornerRadius}*/; }
+#wpfooter{
+	position: inherit ;
+}
