@@ -162,7 +162,7 @@ function theme_options_do_page() {
       </div>
       <div id="top"><a href='#TOP'><img src="<?php echo get_template_directory_uri() ;?>/images/options/top.png" /></a>
       </div>
-      <div style="text-align: left;padding: 5px;"><a href="http://cyberchimps.com/" target="_blank">CyberChimps</a></div>
+
 
     </div>
 </form>
