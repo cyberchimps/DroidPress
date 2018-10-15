@@ -125,22 +125,22 @@ function theme_options_do_page() {
 
 	<div class="menu">
 	<ul>
-		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
-		<li><a href="http://cyberchimps.com/support/" target="_blank">Support</a></li>
-		<li><a href="http://cyberchimps.com/droidpress/docs/">Docs</a></li>
-		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
-		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
-		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
+		<li><a href="http://cyberchimps.com/store/" target="_blank"><?php esc_html_e( 'CyberChimps Store', 'droidpress' ); ?></a></li>
+		<li><a href="http://cyberchimps.com/support/" target="_blank"><?php esc_html_e( 'Support', 'droidpress' ); ?></a></li>
+		<li><a href="http://cyberchimps.com/droidpress/docs/"><?php esc_html_e( 'Docs', 'droidpress' ); ?></a></li>
+		<li><a href="http://cyberchimps.com/forum/" target="_blank"><?php esc_html_e( 'Forum', 'droidpress' ); ?></a></li>
+		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank"><?php esc_html_e( 'Twitter', 'droidpress' ); ?></a></li>
+		<li><a href="http://www.facebook.com/CyberChimps" target="_blank"><?php esc_html_e( 'Facebook', 'droidpress' ); ?></a></li>
 	</ul>
 	</div>
 
 
     <div id="tabs" style="clear:both;">
     <ul class="tabNavigation">
-        <li><a href="#tab1"><span>General</span></a></li>
-        <li><a href="#tab2"><span>Design</span></a></li>
-        <li><a href="#tab3"><span>Blog</span></a></li>
-        <li><a href="#tab4"><span>Social</span></a></li>
+        <li><a href="#tab1"><span><?php esc_html_e( 'General', 'droidpress' ); ?></span></a></li>
+        <li><a href="#tab2"><span><?php esc_html_e( 'Design', 'droidpress' ); ?></span></a></li>
+        <li><a href="#tab3"><span><?php esc_html_e( 'Blog', 'droidpress' ); ?></span></a></li>
+        <li><a href="#tab4"><span><?php esc_html_e( 'Social', 'droidpress' ); ?></span></a></li>
 
     </ul>
 
@@ -171,7 +171,7 @@ function theme_options_do_page() {
 <p class="submit">
 <input name="reset" type="submit" value="Reset" />
 <input type="hidden" name="action" value="reset" />
-<small>WARNING THIS RESTORES ALL DEFAULTS</small>
+<small><?php esc_html_e( 'WARNING THIS RESTORES ALL DEFAULTS', 'droidpress' ); ?></small>
 </p>
 </form>
 	</div>

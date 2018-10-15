@@ -20,7 +20,7 @@
 
 		<div class="content_padding">
 
-			<div class="error">Error 404 <br />
+			<div class="error"> <?php esc_html_e( 'Error 404', 'droidpress' ); ?><br />
 
 			</div>
 
