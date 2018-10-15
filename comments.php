@@ -8,7 +8,7 @@
 */
 
 	if ( post_password_required() ) { ?>
-		This post is password protected. Enter the password to view comments.
+		<?php esc_html_e( 'This post is password protected. Enter the password to view comments.', 'droidpress' ); ?>
 	<?php
 		return;
 	}
@@ -31,17 +31,17 @@
 		<div class="next-posts"><?php previous_comments_link() ?></div>
 		<div class="prev-posts"><?php next_comments_link() ?></div>
 	</div>
-	
+
  <?php else : // this is displayed if there are no comments so far ?>
 
 	<?php if ( comments_open() ) : ?>
 		<!-- If comments are open, but there are no comments. -->
 
 	 <?php else : // comments are closed ?>
-		
+
 
 	<?php endif; ?>
-	
+
 <?php endif; ?>
 
 <?php if ( comments_open() ) : ?>
@@ -53,17 +53,23 @@
 	</div>
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-		<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
+		<p>
+			<?php esc_html_e( 'You must be ', 'droidpress' ); ?>
+			<a href="<?php echo wp_login_url( get_permalink() ); ?>">
+
+			<?php esc_html_e( 'logged in ', 'droidpress' ); ?></a>
+			<?php esc_html_e( 'to post a comment.', 'droidpress' ); ?>
+		</p>
 	<?php else : ?>
-	
+
 	<?php comment_form(); ?>
-	
+
 		<?php endif; ?>
 
-		<!--<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->	
+		<!--<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->
 
 	</form>
-	
+
 </div>
 
 	<?php endif; // If registration required and not logged in ?>

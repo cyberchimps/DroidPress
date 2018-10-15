@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 /*
 	Search
-	
-	Establishes the search functionality. 
-	
+
+	Establishes the search functionality.
+
 	Copyright (C) 2011 CyberChimps
 */
 
@@ -13,15 +13,20 @@ get_header(); ?>
 <div id="content_wrap">
 
 	<div id="content_left">
-		
+
 		<div class="content_padding">
 
 		<?php if (have_posts()) : ?>
 
-		<div class="archive-title">Search Results For:<?php echo get_search_query() ?> </div>
-		
+		<div class="archive-title">
+			<?php
+			esc_html_e( ' Search Results For: ', 'droidpress' );
+			echo get_search_query()
+			?>
+		</div>
+
 		<?php while (have_posts()) : the_post(); ?>
-		
+
 		<div class="post_container">
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -44,7 +49,7 @@ get_header(); ?>
 
 	<?php else : ?>
 
-		<h2 style="margin-left: 28px;"><font size="5">No posts found.</font></h2>
+		<h2 style="margin-left: 28px;"><font size="5"><?php esc_html_e( 'No posts found. ', 'droidpress' ); ?></font></h2>
 
 	<?php endif; ?>
 		</div><!--end content_padding-->
