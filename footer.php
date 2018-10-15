@@ -106,9 +106,7 @@
 			  endif;
 			 ?>
 			</div>
-					<div id="credit">
-						<?php get_template_part('credit', 'footer' ); ?>
-					</div>
+
 
 		</div>  <!--end afterfooterwrap-->
 
